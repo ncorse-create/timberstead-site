@@ -4,28 +4,36 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy · Timberstead</title>
-  <meta name="description" content="How Timberstead handles your information: towns saved on your device, ads from Google AdMob, and purchases through Apple.">
+  <meta name="description" content="How Timberstead handles your information: towns saved on your device, non-personalized ads from Google AdMob, and purchases through Apple.">
+  <link rel="canonical" href="https://ncorse-create.github.io/timberstead-site/privacy/">
   <link rel="icon" type="image/png" href="../favicon-32.png">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
-  <header class="wrap top">
-    <a class="brand" href="../"><img src="../img/icon-512.png" alt=""><span>Timberstead</span></a>
-    <nav class="nav">
-      <a href="../">Home</a>
-      <a href="../support/">Support</a>
-      <a href="./" aria-current="page">Privacy</a>
-    </nav>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="../">
+        <picture>
+          <source srcset="../img/icon-192.webp" type="image/webp">
+          <img src="../img/icon-192.png" alt="" width="192" height="192">
+        </picture>
+        <span>Timberstead</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../">Home</a>
+        <a href="../support/">Support</a>
+        <a href="./" aria-current="page">Privacy</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="wrap">
+  <main id="main" class="wrap" tabindex="-1">
     <article class="doc">
       <h1>Privacy Policy</h1>
-      <p class="meta">Timberstead for iPhone · Effective November 17, 2026</p>
+      <p class="meta">Timberstead for iPhone · Effective November 20, 2026</p>
 
       <p>Timberstead is a single-player town-building game made by Persue Apps ("we", "us"). This policy explains what information the game uses, who receives it, and the choices you have. In short: your towns stay on your device, we don't run any servers or collect your data ourselves, and the ads in the free game come from Google AdMob.</p>
 
@@ -40,7 +48,7 @@
       <table>
         <thead><tr><th>Data</th><th>What it is</th></tr></thead>
         <tbody>
-          <tr><td>Device identifiers</td><td>Your device's advertising identifier (IDFA), only if you allow tracking; otherwise an app-specific identifier that can't follow you to other companies' apps.</td></tr>
+          <tr><td>Device identifiers</td><td>An app-specific device identifier.</td></tr>
           <tr><td>Approximate location</td><td>A rough location worked out from your IP address. Timberstead never asks for or uses your precise location.</td></tr>
           <tr><td>Device and app details</td><td>Device model, operating system version, language and similar technical details.</td></tr>
           <tr><td>Ad interactions</td><td>Which ads were shown and whether they were tapped.</td></tr>
@@ -49,13 +57,7 @@
       </table>
       <p>This information goes to Google, not to us. Google's use of it is covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>; see also <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.</p>
 
-      <h3>Your choices about ads</h3>
-      <ul>
-        <li><strong>Tracking permission.</strong> The first time ads are set up, iOS asks whether Timberstead may track you across other companies' apps and websites. If you choose "Ask App Not to Track", ads are still shown but are not personalized using your advertising identifier. You can change this any time in iOS Settings → Privacy &amp; Security → Tracking.</li>
-        <li><strong>European Economic Area, United Kingdom and Switzerland.</strong> Before any ad is shown, Google's consent form asks for your choices about personalized ads. You can change them later from Timberstead's Settings → Ad Privacy Choices.</li>
-        <li><strong>Remove Ads.</strong> Buying Remove Ads turns ads off for good on your Apple account, and the ad software then shows nothing. Restore Purchases in Settings brings it back on a new device.</li>
-        <li><strong>Apple's personalized ads setting</strong> in iOS Settings → Privacy &amp; Security → Apple Advertising applies to Apple's own ads, not to ads in Timberstead.</li>
-      </ul>
+      <p><strong>Ads.</strong> The free version of Timberstead shows ads from Google AdMob, about one every seven minutes of play, unless you buy Remove Ads ($4.99), which ends them for good. The ads are not personalized: they are not chosen from what you do in other apps or on websites, Timberstead never asks for permission to track you, and the game does not use your device's advertising identifier. To show an ad and count it, Google's software in the app sends Google an app-specific device identifier, a rough location worked out from your internet address, how the ad was seen and tapped, and crash and performance information. None of this is linked to you: Timberstead has no account and sends Google nothing of its own, and your towns stay on your device. In the European Economic Area, the UK and some US states, Google asks for your consent before any ad is requested, and Settings → Ad Privacy Choices lets you change your answer. Google's own policy covers how it uses this data: <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>.</p>
 
       <h2>4. Purchases</h2>
       <p>Remove Ads is sold through Apple's App Store. Apple handles the payment; we never see your payment details, name or Apple ID. The game only learns from Apple whether Remove Ads is owned on your account. Apple's handling of your information is described in <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
@@ -82,9 +84,16 @@
     </article>
   </main>
 
-  <footer class="wrap foot">
-    <p><a href="../">Home</a> · <a href="../support/">Support</a></p>
-    <p>© 2026 Persue Apps</p>
+  <footer class="foot">
+    <div class="wrap">
+      <nav aria-label="Footer">
+        <a href="../">Home</a>
+        <a href="../support/">Support</a>
+        <a href="mailto:persueapps@gmail.com">persueapps@gmail.com</a>
+      </nav>
+      <p>© 2026 Noah Corse · Persue Apps LLC</p>
+      <p class="foot-note">Timberstead for iPhone · Ages 9+</p>
+    </div>
   </footer>
 </body>
 </html>

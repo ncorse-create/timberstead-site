@@ -3,78 +3,550 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Timberstead: a frontier town-builder for iPhone</title>
-  <meta name="description" content="Build a frontier town, one good choice at a time. Clear the forest, raise homes and get your people through the winter. A town-builder for iPhone.">
-  <meta property="og:title" content="Timberstead">
-  <meta property="og:description" content="Build a town. Weather winter. A frontier town-builder for iPhone.">
-  <meta property="og:image" content="img/icon-512.png">
+  <title>Timberstead — Build a Town</title>
+  <meta name="description" content="Timberstead is a frontier town-builder for iPhone. Raise cabins, a chapel, and a hall, see your people through the winter, and hold the wall when bandits come. Free to play, with ads. Coming soon to the App Store.">
+  <meta name="theme-color" content="#1a120d">
+  <link rel="canonical" href="https://ncorse-create.github.io/timberstead-site/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Timberstead — Build a Town">
+  <meta property="og:description" content="A frontier town-builder for iPhone. Build a town. Weather the winter.">
+  <meta property="og:url" content="https://ncorse-create.github.io/timberstead-site/">
+  <meta property="og:image" content="https://ncorse-create.github.io/timberstead-site/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Timberstead — Build a Town">
+  <meta name="twitter:description" content="A frontier town-builder for iPhone. Build a town. Weather the winter.">
+  <meta name="twitter:image" content="https://ncorse-create.github.io/timberstead-site/img/og.jpg">
   <link rel="icon" type="image/png" href="favicon-32.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="img/hero/summer.avif" type="image/avif" fetchpriority="high">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Timberstead",
+    "alternateName": "Timberstead: Build a Town",
+    "url": "https://ncorse-create.github.io/timberstead-site/",
+    "image": "https://ncorse-create.github.io/timberstead-site/img/og.jpg",
+    "description": "A frontier town-builder for iPhone. Build a town and weather the winter.",
+    "genre": "Town builder",
+    "playMode": "SinglePlayer",
+    "operatingSystem": "iOS",
+    "applicationCategory": "Game",
+    "contentRating": "9+",
+    "isAccessibleForFree": true,
+    "author": { "@type": "Person", "name": "Noah Corse" },
+    "publisher": { "@type": "Organization", "name": "Persue Apps LLC" }
+  }
+  </script>
 </head>
-<body>
-  <header class="wrap top">
-    <a class="brand" href="./"><img src="img/icon-512.png" alt=""><span>Timberstead</span></a>
-    <nav class="nav">
-      <a href="./" aria-current="page">Home</a>
-      <a href="support/">Support</a>
-      <a href="privacy/">Privacy</a>
-    </nav>
+<body class="page-home">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="./">
+        <picture>
+          <source srcset="img/icon-192.webp" type="image/webp">
+          <img src="img/icon-192.png" alt="" width="192" height="192">
+        </picture>
+        <span>Timberstead</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="./" aria-current="page">Home</a>
+        <a href="support/">Support</a>
+        <a href="privacy/">Privacy</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="wrap">
-    <section class="hero">
-      <img class="icon" src="img/icon-512.png" alt="Timberstead app icon: a pine tree on a wooden shield">
-      <img class="wordmark" src="img/wordmark.png" alt="Timberstead">
-      <h1>Timberstead</h1>
-      <p class="tagline">Build a town. Weather winter.</p>
-      <p class="sub">Your settlers have reached the frontier. Build them a town, one good choice at a time.</p>
-      <span class="badge soon">Coming soon to the App Store</span>
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-scene">
+        <div class="layer pines-far" data-depth="0.16" aria-hidden="true">
+          <div class="sway">
+            <svg viewBox="0 0 1200 420" preserveAspectRatio="xMidYMax slice">
+              <g fill="#1a4630">
+                <polygon points="40,220 70,120 100,220"/>
+                <polygon points="80,240 120,100 160,240"/>
+                <polygon points="150,230 185,130 220,230"/>
+                <polygon points="980,230 1020,110 1060,230"/>
+                <polygon points="1040,250 1090,90 1140,250"/>
+                <polygon points="250,260 275,180 300,260"/>
+                <polygon points="900,255 930,170 960,255"/>
+                <polygon points="520,250 545,175 570,250"/>
+                <polygon points="600,240 640,140 680,240"/>
+              </g>
+              <g fill="#245838">
+                <polygon points="20,280 55,160 90,280"/>
+                <polygon points="200,290 245,150 290,290"/>
+                <polygon points="940,285 990,145 1040,285"/>
+                <polygon points="1120,270 1155,160 1190,270"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <div class="frame-wrap">
+          <div class="frame">
+            <div class="plates">
+              <picture class="plate plate-summer">
+                <source srcset="img/hero/summer.avif" type="image/avif">
+                <source srcset="img/hero/summer.webp" type="image/webp">
+                <img src="img/hero/summer.jpg" width="1206" height="1100" alt="A frontier chapel and log cabins around a campfire, in summer." fetchpriority="high" decoding="async">
+              </picture>
+              <picture class="plate plate-winter" data-winter hidden aria-hidden="true"></picture>
+              <div class="glow" aria-hidden="true"></div>
+              <canvas id="motes" aria-hidden="true"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="layer pines-front" data-depth="0.42" aria-hidden="true">
+          <div class="sway">
+            <svg viewBox="0 0 1200 640" preserveAspectRatio="xMidYMax meet">
+              <g fill="#0f281c">
+                <polygon points="0,640 0,280 70,80 150,300 130,300 190,460 150,460 210,640"/>
+                <polygon points="120,640 150,360 210,180 270,380 250,380 300,520 260,520 310,640"/>
+                <polygon points="1200,640 1200,260 1120,70 1040,300 1060,300 1000,470 1040,470 980,640"/>
+                <polygon points="1080,640 1040,390 980,200 920,400 940,400 890,540 930,540 880,640"/>
+              </g>
+              <g fill="#1a4630">
+                <polygon points="0,640 40,340 90,160 70,340 110,430 80,430 120,560 70,560 90,640"/>
+                <polygon points="1200,640 1160,330 1105,150 1130,340 1090,450 1120,450 1080,570 1130,570 1110,640"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-copy wrap">
+        <p class="eyebrow">A town-builder for iPhone</p>
+        <picture>
+          <source srcset="img/wordmark.webp" type="image/webp">
+          <img class="wordmark" src="img/wordmark.png" alt="Timberstead" width="1400" height="192">
+        </picture>
+        <h1 id="hero-title">Build a town.</h1>
+        <p class="subhead">Weather the winter.</p>
+        <p class="deck">Clear a frontier and raise a settlement. Keep every villager through the snow, and hold the wall when bandits come.</p>
+        <div class="cta-row">
+          <div class="store" data-store>
+            <a class="store-badge" data-store-link hidden href="#">
+              <span class="store-kicker">View it on the</span>
+              <span class="store-name">App Store</span>
+            </a>
+            <p class="store-badge is-soon" data-store-soon>
+              <span class="store-kicker">Coming soon to the</span>
+              <span class="store-name">App Store</span>
+            </p>
+          </div>
+          <p class="age">Ages 9+</p>
+        </div>
+        <a class="scrollcue" href="#gallery">
+          <span>See the town</span>
+          <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M4 7l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
     </section>
 
-    <section class="shots" aria-label="Screenshots">
-      <figure><img src="img/01_town_a.jpg" alt="A summer frontier town with cabins, fields and a settlement hall" loading="lazy" width="600" height="1305"><figcaption>Grow a frontier town</figcaption></figure>
-      <figure><img src="img/02_winter_a.jpg" alt="The town in deep snow" loading="lazy" width="600" height="1305"><figcaption>Get ready before the snow</figcaption></figure>
-      <figure><img src="img/03_raid_fight_summer.jpg" alt="Bandits running from the town after a raid" loading="lazy" width="600" height="1305"><figcaption>Hold off the raiders</figcaption></figure>
-      <figure><img src="img/05_wall_posts.jpg" alt="A palisade wall with a watchtower" loading="lazy" width="600" height="1305"><figcaption>Draw walls and post soldiers</figcaption></figure>
-      <figure><img src="img/06_farm_ripe_work.jpg" alt="Farm fields at harvest" loading="lazy" width="600" height="1305"><figcaption>Fields, a mill and a bakery</figcaption></figure>
-      <figure><img src="img/04_prepare_a.jpg" alt="The Prepare for winter screen" loading="lazy" width="600" height="1305"><figcaption>See what winter needs</figcaption></figure>
+    <div class="ribbon" aria-hidden="true">
+      <div class="ribbon-track">
+        <p>Log cabins · Frame houses · A chapel · The settlement hall · Sawmill · Fields and harvests · A mine · The blacksmith · Named villagers · Weddings and children · Soldiers on the wall · Four seasons · Free to play ·&nbsp;</p>
+        <p>Log cabins · Frame houses · A chapel · The settlement hall · Sawmill · Fields and harvests · A mine · The blacksmith · Named villagers · Weddings and children · Soldiers on the wall · Four seasons · Free to play ·&nbsp;</p>
+      </div>
+    </div>
+
+    <!--
+      Gallery frames live in img/gallery as 01–10 (.avif, .webp, .jpg) plus -sm avif/webp.
+      To ship a new screenshot round, replace those files and update the alt text and data-title below.
+      Captions are baked into the images.
+    -->
+    <section class="gallery-sec" id="gallery" aria-roledescription="carousel" aria-labelledby="gallery-title">
+      <div class="wrap center">
+        <p class="kicker">The town</p>
+        <h2 id="gallery-title">A year on the frontier</h2>
+        <p class="lede">Ten views of the settlement, from the first cabins to the winter wall. Swipe through, or use the arrows.</p>
+      </div>
+      <div class="gal-bar">
+        <button type="button" class="gal-btn" data-gal="prev" aria-label="Previous screenshot">
+          <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M11 4L6 9l5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <p class="gal-count" aria-hidden="true"><span data-gal-count>1</span> / 10</p>
+        <div class="gal-dots" role="group" aria-label="Choose a screenshot">
+          <button type="button" class="gal-dot" data-gal-dot aria-label="Show Build a Frontier Town" aria-current="true"></button>
+          <button type="button" class="gal-dot" data-gal-dot aria-label="Show Survive the Winter"></button>
+          <button type="button" class="gal-dot" data-gal-dot aria-label="Show Defend Your Town"></button>
+          <button type="button" class="gal-dot" data-gal-dot aria-label="Show Every Villager Has a Name"></button>
+          <button type="button" class="gal-dot" data-gal-dot aria-label="Show Four Seasons, One Town"></button>
+          <button type="button" class="gal-dot" data-gal-dot aria-label="Show Plan for Winter"></button>
+          <button type="button" class="gal-dot" data-gal-dot aria-label="Show Farm the Land"></button>
+          <button type="button" class="gal-dot" data-gal-dot aria-label="Show Train Soldiers"></button>
+          <button type="button" class="gal-dot" data-gal-dot aria-label="Show Build It Your Way"></button>
+          <button type="button" class="gal-dot" data-gal-dot aria-label="Show Gather from the Wild"></button>
+        </div>
+        <button type="button" class="gal-btn" data-gal="next" aria-label="Next screenshot">
+          <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M7 4l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="gal-track" data-gal-track tabindex="0" aria-label="App Store screenshots">
+        <figure class="slide" id="shot-01" data-title="Build a Frontier Town">
+          <div class="phone">
+            <picture>
+              <source type="image/avif" srcset="img/gallery/01-sm.avif 402w, img/gallery/01.avif 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <source type="image/webp" srcset="img/gallery/01-sm.webp 402w, img/gallery/01.webp 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <img src="img/gallery/01.jpg" width="804" height="1748" alt="App Store image. Timberstead, Build a Frontier Town. A summer settlement with a chapel, log cabins, berry bushes, and a campfire." loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </figure>
+        <figure class="slide" id="shot-02" data-title="Survive the Winter">
+          <div class="phone">
+            <picture>
+              <source type="image/avif" srcset="img/gallery/02-sm.avif 402w, img/gallery/02.avif 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <source type="image/webp" srcset="img/gallery/02-sm.webp 402w, img/gallery/02.webp 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <img src="img/gallery/02.jpg" width="804" height="1748" alt="App Store image. Survive the Winter. Homes burn wood. Stock up. The same town under snow." loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </figure>
+        <figure class="slide" id="shot-03" data-title="Defend Your Town">
+          <div class="phone">
+            <picture>
+              <source type="image/avif" srcset="img/gallery/03-sm.avif 402w, img/gallery/03.avif 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <source type="image/webp" srcset="img/gallery/03-sm.webp 402w, img/gallery/03.webp 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <img src="img/gallery/03.jpg" width="804" height="1748" alt="App Store image. Defend Your Town. Soldiers hold the wall. A raid banner says 3 bandits at the south-east wall, with a soldier on guard and bandits closing in." loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </figure>
+        <figure class="slide" id="shot-04" data-title="Every Villager Has a Name">
+          <div class="phone">
+            <picture>
+              <source type="image/avif" srcset="img/gallery/04-sm.avif 402w, img/gallery/04.avif 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <source type="image/webp" srcset="img/gallery/04-sm.webp 402w, img/gallery/04.webp 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <img src="img/gallery/04.jpg" width="804" height="1748" alt="App Store image. Every Villager Has a Name. Give each one a job. A card for Thomas Rowe, age 31, of the herbalist's hut, with health and tiredness." loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </figure>
+        <figure class="slide" id="shot-05" data-title="Four Seasons, One Town">
+          <div class="phone">
+            <picture>
+              <source type="image/avif" srcset="img/gallery/05-sm.avif 402w, img/gallery/05.avif 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <source type="image/webp" srcset="img/gallery/05-sm.webp 402w, img/gallery/05.webp 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <img src="img/gallery/05.jpg" width="804" height="1748" alt="App Store image. Four Seasons, One Town. The same town, all year. The settlement hall in spring, summer, autumn, and winter." loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </figure>
+        <figure class="slide" id="shot-06" data-title="Plan for Winter">
+          <div class="phone">
+            <picture>
+              <source type="image/avif" srcset="img/gallery/06-sm.avif 402w, img/gallery/06.avif 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <source type="image/webp" srcset="img/gallery/06-sm.webp 402w, img/gallery/06.webp 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <img src="img/gallery/06.jpg" width="804" height="1748" alt="App Store image. Plan for Winter. Food, beds, medicine, wood. The Prepare for winter list over an autumn forest." loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </figure>
+        <figure class="slide" id="shot-07" data-title="Farm the Land">
+          <div class="phone">
+            <picture>
+              <source type="image/avif" srcset="img/gallery/07-sm.avif 402w, img/gallery/07.avif 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <source type="image/webp" srcset="img/gallery/07-sm.webp 402w, img/gallery/07.webp 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <img src="img/gallery/07.jpg" width="804" height="1748" alt="App Store image. Farm the Land. Fields, harvests, a farmhouse. Ripe wheat and a cabin in autumn." loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </figure>
+        <figure class="slide" id="shot-08" data-title="Train Soldiers">
+          <div class="phone">
+            <picture>
+              <source type="image/avif" srcset="img/gallery/08-sm.avif 402w, img/gallery/08.avif 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <source type="image/webp" srcset="img/gallery/08-sm.webp 402w, img/gallery/08.webp 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <img src="img/gallery/08.jpg" width="804" height="1748" alt="App Store image. Train Soldiers. Barracks, towers, palisades. A barracks, a watchtower, and a wooden wall." loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </figure>
+        <figure class="slide" id="shot-09" data-title="Build It Your Way">
+          <div class="phone">
+            <picture>
+              <source type="image/avif" srcset="img/gallery/09-sm.avif 402w, img/gallery/09.avif 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <source type="image/webp" srcset="img/gallery/09-sm.webp 402w, img/gallery/09.webp 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <img src="img/gallery/09.jpg" width="804" height="1748" alt="App Store image. Build It Your Way. Pick, drag, place. A log cabin being set down in the clearing." loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </figure>
+        <figure class="slide" id="shot-10" data-title="Gather from the Wild">
+          <div class="phone">
+            <picture>
+              <source type="image/avif" srcset="img/gallery/10-sm.avif 402w, img/gallery/10.avif 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <source type="image/webp" srcset="img/gallery/10-sm.webp 402w, img/gallery/10.webp 804w" sizes="(min-width: 900px) 300px, 74vw">
+              <img src="img/gallery/10.jpg" width="804" height="1748" alt="App Store image. Gather from the Wild. Hunt, forage, chop timber. Cabins and berry bushes at the forest edge. A badge reads No account needed." loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </figure>
+      </div>
+      <p class="sr-only" id="gal-live" aria-live="polite"></p>
     </section>
 
-    <section class="features">
-      <div class="card">
-        <h2>Winter is the test</h2>
-        <p>Homes burn wood. Bushes stop giving food. Cold and hunger make people sick, and the herbalist's medicine brings them back. Prepare shows what the winter needs, in time to do something about it.</p>
+    <section class="chapter chapter-paper" id="build">
+      <div class="wrap chapter-grid">
+        <div class="chapter-copy reveal">
+          <p class="kicker">01 — The clearing</p>
+          <h2>Build and grow</h2>
+          <p class="lede">A camp and a fire, then a town. Raise log cabins and frame houses, a chapel and a settlement hall, a sawmill and a farm with its fields. Pick a building, drag it into the clearing, and set it down.</p>
+        </div>
+        <div class="chapter-art reveal">
+          <div class="phone">
+            <picture>
+              <source type="image/avif" srcset="img/gallery/09-sm.avif 402w, img/gallery/09.avif 804w" sizes="280px">
+              <source type="image/webp" srcset="img/gallery/09-sm.webp 402w, img/gallery/09.webp 804w" sizes="280px">
+              <img src="img/gallery/09.jpg" width="804" height="1748" alt="Placing a log cabin in the clearing. The prompt reads drag to move, tap to build." loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h2>A town that grows</h2>
-        <p>Start with a camp and a fire. Add a sawmill, a farmhouse and its fields, a barn, a grist mill, a bakery, a schoolhouse, an inn and a market. Turn cabins into frame, brick and fine houses.</p>
+    </section>
+
+    <section class="chapter chapter-night chapter-flip" id="winter">
+      <div class="wrap chapter-grid">
+        <div class="chapter-copy reveal">
+          <p class="kicker">02 — The long cold</p>
+          <h2>Survive the winter</h2>
+          <p class="lede">Winter is the test. Homes burn wood. The wild goes quiet, and cold and hunger make people sick. The herbalist's medicine brings them back. Prepare shows the food, beds, medicine, and wood the town needs, in time to do something about it.</p>
+        </div>
+        <div class="chapter-art reveal">
+          <div class="phone">
+            <picture>
+              <source type="image/avif" srcset="img/gallery/02-sm.avif 402w, img/gallery/02.avif 804w" sizes="280px">
+              <source type="image/webp" srcset="img/gallery/02-sm.webp 402w, img/gallery/02.webp 804w" sizes="280px">
+              <img src="img/gallery/02.jpg" width="804" height="1748" alt="The town in deep snow, under the words Survive the Winter. Homes burn wood. Stock up." loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h2>Raids and walls</h2>
-        <p>Bandits come at most once a year, with a few days' warning. Draw a palisade, raise watchtowers and train soldiers at the barracks. They take their posts and defend the town by themselves.</p>
+    </section>
+
+    <section class="chapter chapter-paper" id="people">
+      <div class="wrap chapter-grid">
+        <div class="chapter-copy reveal">
+          <p class="kicker">03 — Names</p>
+          <h2>Families and villagers</h2>
+          <p class="lede">Every settler has a name, a job, and needs of their own. Follow anyone through the day: health, tiredness, and the work in their hands. As the years go on, families form. Weddings, husbands, children. The cabins fill.</p>
+        </div>
+        <div class="chapter-art reveal">
+          <div class="phone">
+            <picture>
+              <source type="image/avif" srcset="img/gallery/04-sm.avif 402w, img/gallery/04.avif 804w" sizes="280px">
+              <source type="image/webp" srcset="img/gallery/04-sm.webp 402w, img/gallery/04.webp 804w" sizes="280px">
+              <img src="img/gallery/04.jpg" width="804" height="1748" alt="A villager card for Thomas Rowe, age 31, who lives in the log cabin and works at the herbalist's hut." loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h2>Every villager counts</h2>
-        <p>Every settler has a name and a job. Watch them chop, carry, build and farm, and follow anyone through their day.</p>
+    </section>
+
+    <section class="chapter chapter-night chapter-flip" id="defend">
+      <div class="wrap chapter-grid">
+        <div class="chapter-copy reveal">
+          <p class="kicker">04 — The wall</p>
+          <h2>Defend the town</h2>
+          <p class="lede">Bandits come at most once a year, and the town gets a few days' warning. Draw a palisade, raise watchtowers, and train soldiers at the barracks. They take their posts and hold the wall.</p>
+        </div>
+        <div class="chapter-art reveal">
+          <div class="phone">
+            <picture>
+              <source type="image/avif" srcset="img/gallery/03-sm.avif 402w, img/gallery/03.avif 804w" sizes="280px">
+              <source type="image/webp" srcset="img/gallery/03-sm.webp 402w, img/gallery/03.webp 804w" sizes="280px">
+              <img src="img/gallery/03.jpg" width="804" height="1748" alt="A raid on the palisade. The banner reads: Raid, 3 bandits at the south-east wall. Everyone is indoors." loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h2>Play your way</h2>
-        <p>Gentle, Frontier, Hard Winter or Hardcore. Pause, play, or run at double speed whenever you like.</p>
+    </section>
+
+    <section class="chapter chapter-paper" id="seasons">
+      <div class="wrap">
+        <div class="center reveal">
+          <p class="kicker">05 — The year</p>
+          <h2>Four seasons, one town</h2>
+          <p class="lede">Spring opens the ground. Summer is for building. Autumn fills the sheds. Winter asks for everything you stored. The same paths, the same hall, a different kind of work.</p>
+        </div>
+        <div class="season-explorer reveal" data-seasons>
+          <div class="season-tabs" role="tablist" aria-label="Seasons at the settlement hall">
+            <button type="button" role="tab" id="tab-spring" aria-controls="panel-spring" aria-selected="true">Spring</button>
+            <button type="button" role="tab" id="tab-summer" aria-controls="panel-summer" aria-selected="false" tabindex="-1">Summer</button>
+            <button type="button" role="tab" id="tab-autumn" aria-controls="panel-autumn" aria-selected="false" tabindex="-1">Autumn</button>
+            <button type="button" role="tab" id="tab-winter" aria-controls="panel-winter" aria-selected="false" tabindex="-1">Winter</button>
+          </div>
+          <div class="season-stage">
+            <figure role="tabpanel" id="panel-spring" aria-labelledby="tab-spring">
+              <picture>
+                <source srcset="img/seasons/spring.avif" type="image/avif">
+                <source srcset="img/seasons/spring.webp" type="image/webp">
+                <img src="img/seasons/spring.jpg" width="1200" height="500" alt="The settlement hall in spring, on green grass, with a campfire. Labeled Spring." loading="lazy" decoding="async">
+              </picture>
+            </figure>
+            <figure role="tabpanel" id="panel-summer" aria-labelledby="tab-summer" hidden>
+              <picture>
+                <source srcset="img/seasons/summer.avif" type="image/avif">
+                <source srcset="img/seasons/summer.webp" type="image/webp">
+                <img src="img/seasons/summer.jpg" width="1200" height="500" alt="The same hall in summer, among berry bushes. Labeled Summer." loading="lazy" decoding="async">
+              </picture>
+            </figure>
+            <figure role="tabpanel" id="panel-autumn" aria-labelledby="tab-autumn" hidden>
+              <picture>
+                <source srcset="img/seasons/autumn.avif" type="image/avif">
+                <source srcset="img/seasons/autumn.webp" type="image/webp">
+                <img src="img/seasons/autumn.jpg" width="1200" height="500" alt="The same hall in autumn, with orange trees. Labeled Autumn." loading="lazy" decoding="async">
+              </picture>
+            </figure>
+            <figure role="tabpanel" id="panel-winter" aria-labelledby="tab-winter" hidden>
+              <picture>
+                <source srcset="img/seasons/winter.avif" type="image/avif">
+                <source srcset="img/seasons/winter.webp" type="image/webp">
+                <img src="img/seasons/winter.jpg" width="1200" height="500" alt="The same hall in winter, roof deep in snow, fire still lit. Labeled Winter." loading="lazy" decoding="async">
+              </picture>
+              <div class="snow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </figure>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h2>Free to play</h2>
-        <p>The whole game is free, every mode included. One purchase removes the ads for good. No account needed.</p>
+    </section>
+
+    <section class="chapter chapter-night" id="smith">
+      <div class="wrap chapter-grid">
+        <div class="chapter-copy reveal">
+          <p class="kicker">06 — Ore and iron</p>
+          <h2>Mine and smith</h2>
+          <p class="lede">Sink a mine at the edge of the clearing and raise a blacksmith by the road. Ore comes up out of the hill. The smith works it into the tools and ironwork a growing town needs.</p>
+        </div>
+        <div class="chapter-art reveal">
+          <figure class="illu">
+            <svg viewBox="0 0 800 480" role="img" aria-label="Illustration of a timbered mine cut into a hill, an ore cart, and a blacksmith shed with a lit forge.">
+              <defs>
+                <linearGradient id="meadow" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#d5e7a4"/>
+                  <stop offset="0.45" stop-color="#8fbe55"/>
+                  <stop offset="1" stop-color="#6ea044"/>
+                </linearGradient>
+                <radialGradient id="forgeGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0" stop-color="#ffd27a"/>
+                  <stop offset="0.45" stop-color="#e36a32"/>
+                  <stop offset="1" stop-color="#e36a32" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <rect width="800" height="480" fill="url(#meadow)"/>
+              <g fill="#2f7a40">
+                <polygon points="0,150 28,70 56,150"/>
+                <polygon points="40,160 78,60 116,160"/>
+                <polygon points="700,155 742,55 784,155"/>
+                <polygon points="640,170 675,90 710,170"/>
+              </g>
+              <g fill="#246636">
+                <polygon points="90,175 130,80 170,175"/>
+                <polygon points="620,180 655,95 690,180"/>
+              </g>
+              <ellipse cx="400" cy="400" rx="420" ry="90" fill="#6ea044"/>
+              <path d="M120 360 C220 330 300 300 400 328 C520 362 620 300 740 330" fill="none" stroke="#8a5a34" stroke-width="26" stroke-linecap="round"/>
+              <path d="M120 360 C220 330 300 300 400 328 C520 362 620 300 740 330" fill="none" stroke="#6b4428" stroke-width="8" stroke-linecap="round"/>
+              <!-- rocky hill with a timbered adit -->
+              <ellipse cx="210" cy="300" rx="150" ry="78" fill="#6a9a48"/>
+              <ellipse cx="250" cy="292" rx="90" ry="48" fill="#5d8740"/>
+              <polygon points="150,292 188,250 214,292" fill="#8e99a0"/>
+              <polygon points="188,268 214,250 230,286" fill="#c5ced2"/>
+              <g>
+                <path d="M168 250 h70 v62 a35 28 0 0 1 -70 0 z" fill="#140e0b"/>
+                <path d="M160 242 h86 v16 h-86 z" fill="#a56b3c"/>
+                <rect x="164" y="242" width="12" height="92" rx="2" fill="#7a4e28"/>
+                <rect x="230" y="242" width="12" height="92" rx="2" fill="#8b5a32"/>
+                <rect x="196" y="242" width="8" height="78" fill="#c4894a"/>
+              </g>
+              <polygon points="96,340 124,308 150,338" fill="#9aa3aa"/>
+              <polygon points="250,348 278,314 310,350" fill="#7e888f"/>
+              <g transform="translate(300 332)">
+                <polygon points="0,8 52,0 52,22 0,30" fill="#6b3e22"/>
+                <polygon points="52,0 78,-8 78,14 52,22" fill="#8a5530"/>
+                <polygon points="8,6 28,2 28,14 8,18" fill="#9aa3aa"/>
+                <circle cx="16" cy="28" r="8" fill="#2c261f"/>
+                <circle cx="58" cy="22" r="8" fill="#2c261f"/>
+              </g>
+              <!-- blacksmith -->
+              <g transform="translate(500 168)">
+                <polygon points="40,150 150,110 250,160 140,205" fill="#6d8f44"/>
+                <polygon points="70,150 150,118 150,196 70,228" fill="#a56b3c"/>
+                <polygon points="150,118 230,148 230,226 150,196" fill="#8d5a32"/>
+                <polygon points="55,145 150,100 245,150 150,190" fill="#3c4652"/>
+                <polygon points="70,128 150,92 230,136 150,172" fill="#4e5a68"/>
+                <polygon points="188,78 206,88 206,132 188,122" fill="#6a5648"/>
+                <polygon points="184,70 210,82 206,90 180,78" fill="#3c4652"/>
+                <polygon points="92,168 122,156 122,196 92,208" fill="#3a2416"/>
+                <polygon points="108,150 150,132 176,146 134,166" fill="#f3e0b8"/>
+              </g>
+              <ellipse class="forge" cx="612" cy="352" rx="46" ry="22" fill="url(#forgeGlow)"/>
+              <polygon points="590,352 612,330 634,352 612,362" fill="#5c656e"/>
+              <polygon points="600,352 612,344 624,352 612,358" fill="#8d98a0"/>
+              <rect x="574" y="358" width="76" height="8" rx="2" fill="#6a5848"/>
+              <circle class="smoke" cx="692" cy="236" r="7" fill="#f4efe4"/>
+              <circle class="smoke d2" cx="700" cy="228" r="9" fill="#f7f3ea"/>
+              <circle class="smoke d3" cx="684" cy="232" r="6" fill="#efe8da"/>
+              <g fill="#2f7a40">
+                <polygon points="20,400 55,300 90,400"/>
+                <polygon points="730,410 765,300 800,410"/>
+              </g>
+            </svg>
+            <figcaption>Ore from the hill. Iron from the forge.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="play" id="play">
+      <div class="wrap center">
+        <p class="kicker">How a year feels</p>
+        <h2>Play it your way</h2>
+        <ul class="modes">
+          <li><strong>Gentle</strong></li>
+          <li><strong>Frontier</strong></li>
+          <li><strong>Hard Winter</strong></li>
+          <li><strong>Hardcore</strong></li>
+        </ul>
+        <p class="note">On Hardcore, a town is deleted for good when everyone in it dies. The other modes always keep a few people alive. Pause, play, or run at double speed whenever you like.</p>
+      </div>
+    </section>
+
+    <section class="close" aria-labelledby="close-title">
+      <div class="wrap">
+        <p class="kicker">iPhone</p>
+        <h2 id="close-title">Free to play.</h2>
+        <p class="lede">The whole game, every mode. Ads support Timberstead, and one optional purchase removes them. No account needed.</p>
+        <div class="cta-row">
+          <div class="store" data-store>
+            <a class="store-badge" data-store-link hidden href="#">
+              <span class="store-kicker">View it on the</span>
+              <span class="store-name">App Store</span>
+            </a>
+            <p class="store-badge is-soon" data-store-soon>
+              <span class="store-kicker">Coming soon to the</span>
+              <span class="store-name">App Store</span>
+            </p>
+          </div>
+          <p class="age">Ages 9+</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="wrap foot">
-    <p><a href="support/">Support</a> · <a href="privacy/">Privacy Policy</a></p>
-    <p>© 2026 Persue Apps. Timberstead is a game for iPhone.</p>
+  <footer class="foot">
+    <div class="wrap">
+      <nav aria-label="Footer">
+        <a href="support/">Support</a>
+        <a href="privacy/">Privacy Policy</a>
+        <a href="mailto:persueapps@gmail.com">persueapps@gmail.com</a>
+      </nav>
+      <p>© 2026 Noah Corse · Persue Apps LLC</p>
+      <p class="foot-note">Timberstead for iPhone · Ages 9+</p>
+    </div>
   </footer>
+
+  <script src="site-config.js" defer></script>
+  <script src="site.js" defer></script>
 </body>
 </html>
