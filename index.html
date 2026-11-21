@@ -419,79 +419,15 @@
           <p class="lede">Sink a mine at the edge of the clearing and raise a blacksmith by the road. Ore comes up out of the hill. The smith works it into the tools and ironwork a growing town needs.</p>
         </div>
         <div class="chapter-art reveal">
-          <figure class="illu">
-            <svg viewBox="0 0 800 480" role="img" aria-label="Illustration of a timbered mine cut into a hill, an ore cart, and a blacksmith shed with a lit forge.">
-              <defs>
-                <linearGradient id="meadow" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#d5e7a4"/>
-                  <stop offset="0.45" stop-color="#8fbe55"/>
-                  <stop offset="1" stop-color="#6ea044"/>
-                </linearGradient>
-                <radialGradient id="forgeGlow" cx="50%" cy="50%" r="50%">
-                  <stop offset="0" stop-color="#ffd27a"/>
-                  <stop offset="0.45" stop-color="#e36a32"/>
-                  <stop offset="1" stop-color="#e36a32" stop-opacity="0"/>
-                </radialGradient>
-              </defs>
-              <rect width="800" height="480" fill="url(#meadow)"/>
-              <g fill="#2f7a40">
-                <polygon points="0,150 28,70 56,150"/>
-                <polygon points="40,160 78,60 116,160"/>
-                <polygon points="700,155 742,55 784,155"/>
-                <polygon points="640,170 675,90 710,170"/>
-              </g>
-              <g fill="#246636">
-                <polygon points="90,175 130,80 170,175"/>
-                <polygon points="620,180 655,95 690,180"/>
-              </g>
-              <ellipse cx="400" cy="400" rx="420" ry="90" fill="#6ea044"/>
-              <path d="M120 360 C220 330 300 300 400 328 C520 362 620 300 740 330" fill="none" stroke="#8a5a34" stroke-width="26" stroke-linecap="round"/>
-              <path d="M120 360 C220 330 300 300 400 328 C520 362 620 300 740 330" fill="none" stroke="#6b4428" stroke-width="8" stroke-linecap="round"/>
-              <!-- rocky hill with a timbered adit -->
-              <ellipse cx="210" cy="300" rx="150" ry="78" fill="#6a9a48"/>
-              <ellipse cx="250" cy="292" rx="90" ry="48" fill="#5d8740"/>
-              <polygon points="150,292 188,250 214,292" fill="#8e99a0"/>
-              <polygon points="188,268 214,250 230,286" fill="#c5ced2"/>
-              <g>
-                <path d="M168 250 h70 v62 a35 28 0 0 1 -70 0 z" fill="#140e0b"/>
-                <path d="M160 242 h86 v16 h-86 z" fill="#a56b3c"/>
-                <rect x="164" y="242" width="12" height="92" rx="2" fill="#7a4e28"/>
-                <rect x="230" y="242" width="12" height="92" rx="2" fill="#8b5a32"/>
-                <rect x="196" y="242" width="8" height="78" fill="#c4894a"/>
-              </g>
-              <polygon points="96,340 124,308 150,338" fill="#9aa3aa"/>
-              <polygon points="250,348 278,314 310,350" fill="#7e888f"/>
-              <g transform="translate(300 332)">
-                <polygon points="0,8 52,0 52,22 0,30" fill="#6b3e22"/>
-                <polygon points="52,0 78,-8 78,14 52,22" fill="#8a5530"/>
-                <polygon points="8,6 28,2 28,14 8,18" fill="#9aa3aa"/>
-                <circle cx="16" cy="28" r="8" fill="#2c261f"/>
-                <circle cx="58" cy="22" r="8" fill="#2c261f"/>
-              </g>
-              <!-- blacksmith -->
-              <g transform="translate(500 168)">
-                <polygon points="40,150 150,110 250,160 140,205" fill="#6d8f44"/>
-                <polygon points="70,150 150,118 150,196 70,228" fill="#a56b3c"/>
-                <polygon points="150,118 230,148 230,226 150,196" fill="#8d5a32"/>
-                <polygon points="55,145 150,100 245,150 150,190" fill="#3c4652"/>
-                <polygon points="70,128 150,92 230,136 150,172" fill="#4e5a68"/>
-                <polygon points="188,78 206,88 206,132 188,122" fill="#6a5648"/>
-                <polygon points="184,70 210,82 206,90 180,78" fill="#3c4652"/>
-                <polygon points="92,168 122,156 122,196 92,208" fill="#3a2416"/>
-                <polygon points="108,150 150,132 176,146 134,166" fill="#f3e0b8"/>
-              </g>
-              <ellipse class="forge" cx="612" cy="352" rx="46" ry="22" fill="url(#forgeGlow)"/>
-              <polygon points="590,352 612,330 634,352 612,362" fill="#5c656e"/>
-              <polygon points="600,352 612,344 624,352 612,358" fill="#8d98a0"/>
-              <rect x="574" y="358" width="76" height="8" rx="2" fill="#6a5848"/>
-              <circle class="smoke" cx="692" cy="236" r="7" fill="#f4efe4"/>
-              <circle class="smoke d2" cx="700" cy="228" r="9" fill="#f7f3ea"/>
-              <circle class="smoke d3" cx="684" cy="232" r="6" fill="#efe8da"/>
-              <g fill="#2f7a40">
-                <polygon points="20,400 55,300 90,400"/>
-                <polygon points="730,410 765,300 800,410"/>
-              </g>
-            </svg>
+          <figure class="smith-shot">
+            <!-- Game area of the Dig for Iron frame, below the title band: Mine, then Blacksmith. -->
+            <div class="phone">
+              <picture>
+                <source type="image/avif" srcset="img/smith/mine-sm.avif 420w, img/smith/mine.avif 840w" sizes="280px">
+                <source type="image/webp" srcset="img/smith/mine-sm.webp 420w, img/smith/mine.webp 840w" sizes="280px">
+                <img src="img/smith/mine.jpg" width="840" height="1418" alt="The mine in the hills and the blacksmith, labeled Mine and Blacksmith." loading="lazy" decoding="async">
+              </picture>
+            </div>
             <figcaption>Ore from the hill. Iron from the forge.</figcaption>
           </figure>
         </div>
